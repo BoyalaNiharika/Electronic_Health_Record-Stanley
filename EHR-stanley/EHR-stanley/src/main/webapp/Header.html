@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Electronic Health Record-Stanley</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	
+	<style>
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-size: cover;
+background-position: center;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+.header
+{
+	margin:auto;
+    position: fixed;
+    background-size: cover;
+    background-position: center;   
+}
+.menu-bar
+{
+   	margin-top:200px;
+    position: fixed;
+    width:100%;
+    height: 50px;
+    background:rgb(153, 15, 15);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+
+}
+.menu-bar ul li
+{
+    width: 200px;
+    margin: 1px;
+    padding: 15px;
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.menu-bar ul li:hover
+{
+    background:rgb(153, 15, 15);
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+.sub-menu-1
+{
+    display: none;
+
+}
+.menu-bar ul li:hover  .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(153, 15, 15);
+    margin-top: 15px;
+    margin-right:-5px;  
+}
+.menu-bar ul li:hover  .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+.menu-bar ul li:hover  .sub-menu-1 ul li:hover
+{
+    color:white;
+}
+.fa-angle-right
+{
+    float:right;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover  .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -20px;
+    margin-left: 150px;
+    background: rgb(153, 15, 15)
+}
+	</style>
+		
+	
+</head>
+<body>
+    <div class="header">
+    <header>
+        	<img src="images/stanley.png" width="1550px" height="200px">
+        	</header>
+    </div>
+    <div class = "menu-bar">
+        <ul>
+            <li class="active"><a href = "MainPage.jsp"><i class="fa fa-home"></i>home</a></li>
+            <li><a href = "#"><i class="fa fa-user"></i>User Login</a>
+            <div class = "sub-menu-1">
+                <ul>
+                    <li class ="hover-me"><a href="#">Student</a><i class="fa fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="LoginPageForStudent.jsp">Application Form</a></li>
+                            <li><a href="updateStudent.jsp">UpdateHealth Details</a></li>
+                            
+                        </ul>
+        
+                    </div>
+                    </li>
+                    <li class ="hover-me"><a href="#">Faculty</a><i class="fa fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="LoginPageForFaculty.jsp">Application Form</a></li>
+                            <li><a href="updateFaculty.jsp">Update Health Details</a></li>
+                            
+                        </ul>
+            
+                    </div>
+                    </li>
+                    <li class ="hover-me"><a href="#">Non-Teaching Faculty</a><i class="fa fa-angle-right"></i>
+                    <div class="sub-menu-2">
+                        <ul>
+                            <li><a href="LoginPageForNonTeachingFaculty.jsp">Application Form</a></li>
+                            <li><a href="updateNonTeachingFaculty.jsp">Update Health Details</a></li>
+                            
+                        </ul>
+                    </div>
+                    </li>
+                </ul>
+            </div>
+            </li>
+            <li><a href = "AdminLogin.jsp"><i class="fa fa-lock"></i>Admin Login</a></li>
+            <li><a href = ContactUs.jsp><i class="fa fa-phone"></i>Contact Us</a></li>
+        	<!--  <li><a href = "#"><i class="fa fa-user-plus"></i>Login</a>
+            	<div class = "sub-menu-1">
+                	<ul>
+                    	<li><a href="SignUp.jsp">SignUp</a></li>
+                    	<li><a href="LoginPageForFaculty.jsp">Login</a></li>
+                    	<li><a href="Logout.html">Logout</a></li>
+            
+                	</ul>
+            	</div>
+            </li>-->
+		</ul>
+	</div>
+</body>
+</html>
